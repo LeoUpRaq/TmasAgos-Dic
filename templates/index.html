@@ -1,1 +1,23 @@
-hola
+{% extends 'base.html' %}
+{% block title %}{% endblock title %}
+
+{% block extra_head %} {% endblock extra_head %}
+
+{% block navbar %}
+
+{% include 'components/navbar.html' %}
+
+{% endblock navbar %}
+
+
+{% block content %}
+
+hola Admin <a href="{% url 'blog:home_Admin' %}">Admin here</a>
+
+{% endblock content %}
+
+{% block footer %}
+
+{% endblock footer %}
+
+{% block javascript %}{% endblock javascript %}
